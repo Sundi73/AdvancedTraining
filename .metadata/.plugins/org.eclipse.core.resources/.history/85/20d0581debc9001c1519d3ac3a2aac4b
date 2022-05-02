@@ -1,0 +1,27 @@
+package com.pack;
+
+import java.util.Scanner;
+public class Series {
+
+	public static void main(String[] args) {
+		 Scanner scan = new Scanner(System.in);
+		System.out.println("Enter two number");
+		
+		int first = scan.nextInt();
+		int second = scan.nextInt();
+		
+		System.out.print(first+" "+second);
+		
+		int number = 13;
+		int third = 0;
+		
+		for(int i = 1 ; i <= number; i++) {
+			third = first + second ; 
+			
+			System.out.print(third+" ");
+			first = second ;
+			second = third;
+		}
+	}
+
+}

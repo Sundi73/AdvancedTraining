@@ -1,0 +1,42 @@
+package com.pack2;
+
+import com.pack.Rectangle;
+
+public class TestRectangle {
+
+	public static void main(String[] args) {
+
+
+		Rectangle r1 = new Rectangle();
+		r1.setlength(10);
+		r1.setBreath(4);
+		r1.calculate();
+		r1.display();
+		
+		Rectangle r2 = new Rectangle();
+		r2.setBreath(3);
+		r2.setlength(6);
+		r2.calculate();
+		r2.display();
+		
+		Rectangle r3 = new Rectangle();
+		r3.setBreath(2);
+		r3.setlength(9);
+		r3.calculate();
+		r3.display();
+		
+		Rectangle r4 = new Rectangle();
+		r4.setBreath(6);
+		r4.setlength(21);
+		r4.calculate();
+		r4.display();
+		
+		Rectangle r5 = new Rectangle();
+		r5.setBreath(8);
+		r5.setlength(16);
+		r5.calculate();
+		r5.display();
+
+	}
+
+}

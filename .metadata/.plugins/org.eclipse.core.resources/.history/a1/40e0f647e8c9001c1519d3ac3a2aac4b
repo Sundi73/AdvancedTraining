@@ -1,0 +1,22 @@
+package com.pack;
+
+import java.util.Scanner;
+
+public class StringCheck {
+	
+	public static boolean isPalindrome(String[] args) {
+		int first = 0;
+		int last = args.length-1;
+		
+		while(first < last) {
+			if(args.)
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println("Lenght of String : "+args[0].length());
+		System.out.print("UpperCase : "+args[0].toUpperCase());
+	}
+
+}

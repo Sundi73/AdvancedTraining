@@ -1,0 +1,29 @@
+package com.pack;
+
+public class StringCheck {
+	
+	public static String isPalindrome(String str) {
+		int n = str.length();
+		String rev = "" ;
+		for(int i = n-1 ; i>=0 ; i--) {
+			rev = rev + str.charAt(i);
+		}
+		return rev ;
+	}
+
+	
+	public static void main(String[] args) {
+		System.out.println(args[0]);
+		
+		System.out.println("Lenght of String : "+args[0].length());
+		System.out.print("UpperCase : "+args[0].toUpperCase());
+		
+		//System.out.println(isPalindrome(args[0]));
+		if(args[0].equals(isPalindrome(args[0]))) {
+			System.out.println(args[0]+" is palindrome");
+		}else {
+			System.out.println(args[0]+" is not palindrome");
+		}
+	}
+
+}

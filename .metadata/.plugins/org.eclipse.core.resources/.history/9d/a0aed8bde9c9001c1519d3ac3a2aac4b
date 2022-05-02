@@ -1,0 +1,26 @@
+package com.pack;
+
+import java.util.Scanner;
+
+public class StringCheck {
+	
+	public static String isPalindrome(String str) {
+		int n = str.length();
+		String rev = "" ;
+		for(int i = n-1 ; i>=0 ; i--) {
+			rev = rev + str.charAt(i);
+		}
+		return rev ;
+	}
+
+	public static void main(String[] args) {
+		System.out.println(args[0]);
+		
+		System.out.println("Lenght of String : "+args[0].length());
+		System.out.print("UpperCase : "+args[0].toUpperCase());
+		
+		System.out.println(isPalindrome(args[0]));
+		//if(args.equals(isPalindrome(args)));
+	}
+
+}

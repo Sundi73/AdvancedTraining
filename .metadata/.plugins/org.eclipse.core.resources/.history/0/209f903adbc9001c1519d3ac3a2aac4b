@@ -1,0 +1,31 @@
+package com.pack;
+
+public class Rectangle {
+	
+	private float length=1;
+	private float breath=1;
+	public float getlength() {
+		return length;
+	}
+	
+	public int perimeter() {
+		return 2*(length+breath);
+	}
+	
+	public float area() {
+		return length*breath;
+	}
+	
+	public float getBreath() {
+		return breath;
+	}
+	
+	public float calculate() {
+		return length*breath;
+	}
+	
+	public void display() {
+		System.out.println("the area of rectangle is: "+ calculate());
+	}
+
+}

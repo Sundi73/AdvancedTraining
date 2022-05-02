@@ -1,0 +1,23 @@
+package com.pack;
+
+import java.util.Scanner;
+
+public class StringCheck {
+	
+	public boolean isPalindrome(String str) {
+		int first = 0;
+		int last = str.length()-1;
+		
+		while(first < last) {
+			if(args)
+		}
+	}
+
+	public static void main(String[] args) {
+		
+		System.out.println("Lenght of String : "+args[0].length());
+		
+		if(i)
+	}
+
+}

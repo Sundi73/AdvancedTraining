@@ -1,0 +1,28 @@
+package com.pack;
+
+public class StringHandling {
+	
+	public static void main(String[] args) {
+		
+		String str = "Java is simple";
+		System.out.println(str.toUpperCase());
+		System.out.println(str.toLowerCase());
+		
+		String s[] = str.split(" ");
+		System.out.print(s[0].charAt(0)+" ");
+		System.out.print(s[1].charAt(0)+" ");
+		System.out.println(s[2].charAt(0));
+		
+		StringBuilder sb = new StringBuilder(s[0] );
+		System.out.print(sb.reverse()+" ");
+		
+		StringBuilder sb1 = new StringBuilder(s[1]);
+		System.out.print(sb1.reverse()+" ");
+		
+		StringBuilder sb2 = new StringBuilder(s[2]);
+		System.out.println(sb2.reverse());
+		
+		System.out.println(str.length());
+	}
+
+}

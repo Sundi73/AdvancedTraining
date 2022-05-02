@@ -1,0 +1,29 @@
+package com.pack;
+
+public class BankAccount {
+	
+	private int accNo;
+	private String accName;
+	private String accType;
+	private float balance;
+	public BankAccount(int accNo, String accName, String accType, float balance) {
+		super();
+		this.accNo = accNo;
+		this.accName = accName;
+		this.accType = accType;
+		this.balance = balance;
+	}
+	
+	public float getBalance() {
+		if(balance < 1000) {
+			try {
+				throw new NumberFormatException();
+			}catch(NumberFormatException nfx) {
+				System.out.println("Balance is low" + balance);
+			}
+		}
+		
+		return balance;
+	}
+
+}

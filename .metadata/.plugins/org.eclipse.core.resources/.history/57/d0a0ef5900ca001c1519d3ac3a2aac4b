@@ -1,0 +1,21 @@
+package com.pack;
+
+import java.util.Scanner;
+
+public class split {
+
+	public static void main(String[] args) {
+	
+		Scanner scan = new Scanner(System.in);
+		System.out.println("Enter : ");
+		String str = "23  +      45   - (   343   /   12  )";
+		
+		String splitofstring[] = str.split(" ");
+		
+		for (String string : splitofstring) {
+			System.out.println(string);
+		}
+
+	}
+
+}

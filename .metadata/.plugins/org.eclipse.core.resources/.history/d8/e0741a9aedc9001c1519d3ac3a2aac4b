@@ -1,0 +1,23 @@
+package com.pack;
+
+public class ArrayProblem {
+	public static void main(String[] args) {
+		int a[] = {3, 2, 4, 5, 6, 4, 5, 7, 3, 2, 3, 4, 7, 1, 2, 0, 0, 0};
+		int sum = 0;
+		for(int i = 0 ; i< 14 ; i++) {
+			sum = sum + a[i];
+		}
+		a[15] = sum ;
+		System.out.println(a[15]);
+		
+		int add= 0;
+		for(int i = 0; i<a.length ; i++) {
+			 add = add + a[i];
+		}
+		double average = add/a.length;
+		System.out.println(add );
+		System.out.println(average );
+		System.out.println(a.length );
+	}
+
+}

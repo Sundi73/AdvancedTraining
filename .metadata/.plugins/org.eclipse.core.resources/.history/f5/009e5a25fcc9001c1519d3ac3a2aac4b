@@ -1,0 +1,11 @@
+package com.pack;
+
+public class StringHandling {
+	
+	public static void main(String[] args) {
+		
+		String str = "Java is simple";
+		System.out.println(str.toUpperCase());
+	}
+
+}

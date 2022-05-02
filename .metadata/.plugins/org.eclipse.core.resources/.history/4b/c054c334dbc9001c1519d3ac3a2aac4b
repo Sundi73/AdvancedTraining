@@ -1,0 +1,28 @@
+package com.pack;
+
+public class Rectangle {
+	
+	private int length=1;
+	private int breath=1;
+	public int getlength() {
+		return length;
+	}
+	public void setlength(int length) {
+		this.length = length;
+	}
+	public int getBreath() {
+		return breath;
+	}
+	public void setBreath(int breath) {
+		this.breath = breath;
+	}
+	
+	public int calculate() {
+		return length*breath;
+	}
+	
+	public void display() {
+		System.out.println("the area of rectangle is: "+ calculate());
+	}
+
+}

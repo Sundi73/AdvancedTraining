@@ -1,0 +1,43 @@
+package com.pack;
+
+public class Rectangle {
+	
+	private float length=1;
+	private float breath=1;
+	public float getlength() {
+		return length;
+	}
+	
+	public float perimeter() {
+		return 2*(length+breath);
+	}
+	
+	public float area() {
+		return length*breath;
+	}
+	
+	public void setValue(float length, float breath) {
+		if(length > 0 && length < 20)
+			this.length = length ;
+		if(breath > 0 && breath < 20) {
+			this.breath = breath ;
+		}
+	}
+	
+	public float getBreath() {
+		return breath;
+	}
+	
+	public float getLength() {
+		return length;
+	}
+	
+	public float calculate() {
+		return length*breath;
+	}
+	
+	public void display() {
+		System.out.println("the area of rectangle is: "+ calculate());
+	}
+
+}
