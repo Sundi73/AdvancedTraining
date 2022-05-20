@@ -4,7 +4,8 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Bookstore:Reset Password</title>
+<title>Insert title here</title>
+
 <style>
 body{
 background-color: yellow;
@@ -24,21 +25,25 @@ padding-bottom: 5px;
 </style>
 </head>
 <body>
-
+<%
+if(session.getAttribute("username")== null){
+	response.sendRedirect("index.jsp");
+}
+%>
 <div class="form-center">
-	<form action="<%= request.getContextPath() %>/forgetPassword" method="post">
+	<form>
 		<table border="1">
 				<tr>
 					<th colspan="2">Enter Information Here</th>
 				</tr>
 				<tr>
-					<td>Email</td>
-					<td><input type="text" name="emailCheck">*</td>
+					<td>New Password</td>
+					<td><input type="text" name="newpassword">*</td>
 				</tr>
 				
 				<tr>
-					<td>User Name</td>
-					<td><input type="text" name="usernameCheck">*</td>
+					<td>Confirm New Password</td>
+					<td><input type="text" name="confirmpassword">*</td>
 				</tr>
 				<tr>
 					<td>
